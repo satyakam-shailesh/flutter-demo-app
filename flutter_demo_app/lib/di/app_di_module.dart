@@ -1,10 +1,12 @@
-
+import 'package:flutter_demo_app/data/di/data_di_module.dart';
+import 'package:flutter_demo_app/domain/di/domain_di_module.dart';
 import 'package:get_it/get_it.dart';
 
-
-
-GetIt getIt = GetIt.instance;
+final appDIComponent = GetIt.instance;
 
 class Appdimodule {
-  //final getIt = GetIt.instance;
+  static void register() {
+    DataDIModule.register();
+    DomainDiModule.register();
+  }
 }

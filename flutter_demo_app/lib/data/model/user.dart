@@ -1,13 +1,14 @@
-import 'package:flutter_demo_app/data/model/address.dart';
 
 class User {
   final String name;
   final String email;
-  final Address address;
+  final String street;
+  final String city;
 
   User({
-    required this.street,
+    required this.name,
+    required this.email,
     required this.city,
-    required this.address
+    required this.street,
   });
 }
